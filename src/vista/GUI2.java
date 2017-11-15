@@ -32,9 +32,49 @@ public class GUI2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ventanaBatalla = new javax.swing.JFrame();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        fondoBatalla = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         pFondo = new javax.swing.JPanel();
         lFondo = new javax.swing.JLabel();
+
+        ventanaBatalla.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setOpaque(false);
+        jPanel2.setLayout(null);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/recursos/3.gif"))); // NOI18N
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(170, 50, 100, 100);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/recursos/1.gif"))); // NOI18N
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(0, 60, 100, 100);
+
+        ventanaBatalla.getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 160));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/recursos/fondo2.jpeg"))); // NOI18N
+
+        javax.swing.GroupLayout fondoBatallaLayout = new javax.swing.GroupLayout(fondoBatalla);
+        fondoBatalla.setLayout(fondoBatallaLayout);
+        fondoBatallaLayout.setHorizontalGroup(
+            fondoBatallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fondoBatallaLayout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 5, Short.MAX_VALUE))
+        );
+        fondoBatallaLayout.setVerticalGroup(
+            fondoBatallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fondoBatallaLayout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        ventanaBatalla.getContentPane().add(fondoBatalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 160));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addKeyListener(new java.awt.event.KeyAdapter() {
@@ -110,6 +150,7 @@ public class GUI2 extends javax.swing.JFrame {
                 }
                 break;
         }
+        ventanaBatalla.setVisible(true);
     }//GEN-LAST:event_formKeyPressed
 
     /**
@@ -181,8 +222,14 @@ public class GUI2 extends javax.swing.JFrame {
     private JLabel[][] iconos = new JLabel[8][8];
     private ImageIcon[] iconosImagen = new ImageIcon[5];
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel fondoBatalla;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lFondo;
     private javax.swing.JPanel pFondo;
+    private javax.swing.JFrame ventanaBatalla;
     // End of variables declaration//GEN-END:variables
 }
